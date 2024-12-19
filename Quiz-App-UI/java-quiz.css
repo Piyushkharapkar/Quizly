@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #FF6A00, #FFD700);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Quiz container styling */
+.quiz-container {
+    background-color: #332411;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.quiz-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #FFA500;
+}
+
+/* Quiz information (timer and question number) */
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.label {
+    color: #d1d5db;
+    font-weight: 700;
+}
+
+.timer, .question-number {
+    color: #FFA500;
+}
+
+/* Question text */
+.question {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+/* Options styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option {
+    background-color: #ffffff;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.option:hover {
+    background-color: #FFA500;
+    color: #332411;
+    /* transform: scale(1.05); */
+}
+
+/* Next button styling */
+.next-button {
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.next-button:hover {
+    background-color: #E67E00;
+    box-shadow: 0 4px 10px rgba(230, 126, 0, 0.3);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
